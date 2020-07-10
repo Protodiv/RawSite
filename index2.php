@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="theme-color" content="#000">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>LIDDWEB</title>
+
+  <!-- ------------------------------------------------------------->
+  <link rel="shortcut icon"  type="image/png" href="<?php echo get_template_directory_uri() ?>/assets/images/favicon.png">
+   <!-- ------------------------------------------------------------->
+
+<script src="<?php echo get_template_directory_uri() ?>/js/jqueryUNcomp-3.5.1.min.js"></script> <!-- 1 -->
+
+ <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script> 2 -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 3 --> 
+
+<!-- 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+     <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script> 
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+
+
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+<!--<script src="js/jquery.fsscroll.js"></script>
+ <link rel="stylesheet" type="text/css" href="style/fullpage.css">
+
+<script type="text/javascript" src="js/fullpage.js"></script> -->
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.﻿cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>﻿
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+
+<script src="<?php echo get_template_directory_uri() ?>/js/wow.min.js"></script>
+
+<script src="https://kit.fontawesome.com/464b468383.js" crossorigin="anonymous"></script> 
+
+<script src="https://unpkg.com/mathjs@7.0.0/dist/math.min.js"></script>
+
+
+	<link href="https://fonts.googleapis.com/css?family=Sacramento|Titillium+Web&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Comic+Neue:300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/lib/font-awsome/css/font-awesome.min.css">
+	
+<!-- ------------------------------------------------------------- -->
+	
+
+     <!-- Bootstrap CSS  -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+   
+<!-- -----------------------------ERROR-------------------------------------------- -->
+
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- 
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+     <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    -->
+<!-- ------------------------------------------------------------------------------ -->
+
+ 
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/style.css"> 
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/stylee.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/style/animate.css">
+
+
+
+
+</head>
+<!-- xs->    sm->     md->     lg->     xl -->
+<!-- 0px     600px    960px    1280px   1920px   -->
+<body id="#bodyscrol" class="element" style="background-color: black!important">
+
+<div class="preloader" style="max-width: 1000%; overflow:hidden;  background:#000;">
+  <div class="preloader__row">
+
+       <center><br><br><br>
+    <div class="loader" id="loader1"></div>
+    <div class="loader" id="loader2"></div>
+    <div class="loader" id="loader3"></div>
+    <div class="loader" id="loader4"></div>
+  <!--Delete the "loader3" and "loader4" divs for a 2-layer loader-->
+  <!--You can also change the animation durations or delays, that looks also pretty cool -->
+    <span id="textPreload">LOADING...</span><br>
+
+  </div>
+</div>
+    
+      <!-- <div class="cursor"></div> -->
+<!-- <div class="container">
+  <div class="sections"> -->
+    <!-- ---------------------------------------------------------------------------- -->
+    <!---------------------------------- 1 БЛОК ---------------------------------------->
+    <!--  ---------------------------------------------------------------------------- -->
+   <div  id="myblock0" > 
+    
+      <nav class="navbar header-nav position-fixed">
+        
+        <a class="navbar-brand text-light navbar-brand-myicon mynavbar_brand" href="#myblock0"><img class="header-nav-LOGO" src="<?php echo get_template_directory_uri() ?>/assets/images/LOGO.png"></a>
+
+        <button class="navbar-toggler mybutton" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        id="navbarButton"
+        class="navBarButtonclass" 
+        >
+         <div id="nav_icon3" class="btnBurger">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span> 
+            </div>
+
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+
+        </div>
+        </nav>
+     <!-- <video  class="videoBackG" id="video" height="auto" autoplay="autoplay" loop="loop" preload="auto" muted="muted"  style="z-index: -2; min-width: 100%; 
+          min-height: 100%;
+          width: auto;
+          height: 300px;   object-fit: cover; background-size: cover; overflow: hidden; position: fixed;background-size: cover; overflow: hidden; ">
+                      <source class="videoBackG" src="video/Blackstars.mp4">
+                      </video>-->
+      <div id="particles-js" class="videoBackG" style="
+        position: absolute;
+        z-index: -1;"></div>
+      <div container-fluid>
+        <div class="TitleLOGO text-light">
+          <h1 class="display-1 WEB">WEB</h1>
+          <h2 class="display-10 Production">PRODUCTION</h2>
+        </div>
+        <div class="row flex-lg-nowrap justify-content-center row-trapecii-h">
+          <div class="trapecia3 figure wow fadeInLeft" data-wow-duration="1s" data-wow-delay="2s"></div>
+          <div class="paralrlogram1 figure wow fadeIn" data-wow-duration="1s"></div>
+          <div id="trapecia22" class="trapecia2 figure wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s"></div>
+        </div>
+      </div>
+    
+      <div id="idPopOutMenu" class="PopOutMenu">
+           <!-- <i class="fab fa-jira fa-2x text-light PopOutMenubutt" id="PopOutMenubutt"></i>-->
+
+        <div class="canvback">
+      <canvas id="linesCanv">
+        
+      </canvas>
+      
+      </div>
+        <div class="container-fluid-menu">
+          <div class="container-menu">
+            <div class="half-menu">
+                      <ul class="nav navbar-nav">
+                          <li  id="1item" class="nav-itemm firstItem "><a id="1elem" class="scrollto" onclick="closeOnButtMenu()" href="#myblock1">About Us</a></li>
+
+                          <li id="2item" class="nav-itemm activee secondItem"><a id="2elem" class="scrollto" onclick="closeOnButtMenu()" href="#myblock0">Home</a></li>
+                          
+                          <li id="3item" class="nav-itemm thirdItem"><a  id="3elem"  class="scrollto" onclick="closeOnButtMenu()" href="#myblock4">Services</a></li>
+
+                          <li id="4item" class="nav-itemm fourthItem"><a id="4elem" class="scrollto" onclick="closeOnButtMenu()" href="#myblock5">Contact</a></li>                  
+
+                          <!--<li id="5item"  class="nav-itemm fifthItem"><a id="5elem" class="scrollto" onclick="closeOnButtMenu()" href="#contact">Portfolio</a></li>-->
+                      </ul><!--//nav-->
+                  </div>
+          </div>
+          </div>
+                    <!--//SCROOL PICTURE
+                    <div class="wrapper">
+                        <div class="scroll-indicator" id="indicator">
+                          <div class="mask">
+                            <div class="line" id="line">
+                              <div class="innerline" id="innerline"></div>
+                            </div>
+                          </div>
+                          <div class="text" id="text">scroll</div>
+                        </div>
+                      </div> -->
+      </div>
+          <div class="ErrorSizeMessage d-flex justify-content-center">
+                
+             <img src="<?php echo get_template_directory_uri() ?>/assets/images/rotate.png" class="align-self-center ErrorSizeMessagebutt" style="transform: scale(0.2);">
+             <p class="text-light align-self-center"style="margin-top:160px; font-size: 20px;">rotate your screen</p>
+          </div>
+    </div>
+    <!-- ---------------------------------------------------------------------------- -->
+    <!---------------------------------- 2 БЛОК ---------------------------------------->
+    <!-- ---------------------------------------------------------------------------- -->
+    <div id="myblock1" class="block2"> 
+    
+      
+      <div class="background">      <!--BackGround Image-->
+      <img class="backgroundimg" src="<?php echo get_template_directory_uri() ?>/assets/images/tableroom.jpg">
+      </div>
+      <header >   
+      <div class="container-fluid">                       <!--HEADER -->
+        <div class="row flex-nowrap align-items-center basisArticle">
+          <h2 id="Articlee" class="Article text-light wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">WE CAN DO</h2>
+          <h3 id="Article_dope" class="Article_dop">EVERYTHING YOU WANT</h3>
+        </div>
+      </div> 
+        <div id="BlueBlocke" class="BlueBlock"></div>
+      </header>
+
+      <div class="container-fluid position-absolute d-flex justify-content-center  MainTezis_true ">
+      <div class="row justify-content-center align-self-center text-light MainTezis"> 
+        <!-- MAIN TEXT -->
+        <div class="MainTezis_position wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+          <p>WE CAN MAKE YOUR WEBSITE <span>UNIQUE</span> AND <span>ATTRACTIVE</span></p>
+          <p>WITH US YOU WILL GAIN RENOWN AND <span>SUCCESS</span></p>
+          <p>THANKS TO OUR <span>WORK</span>,</p>
+          <p><span>YOU</span> WILL INCREASE ONLINE SALES AND THEREFORE <span>PROFIT</span></p>
+        </div>
+      </div>
+      </div>
+      <div class="Contact text-light exampleContact"> <!-- CONTACT -->
+        <a class="Contact hover hover-1 scrollto wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" href="#myblock5">CONTACT</a>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------- -->
+    <!---------------------------------- LIDD ---------------------------------------->
+    <!-- ---------------------------------------------------------------------------- -->
+    <div id="myblock2" class="block2" style="padding: 0px;"> 
+    
+          
+      <div id="containerLidd" class="container-lidd">
+        <video id="LiddVideo"  class="videolidd"height="auto" loop="loop" autoplay="autoplay"  preload="auto" muted="muted"  style=" "  >
+            <source src="<?php echo get_template_directory_uri() ?>/assets/video/videolidd.mp4"> 
+            </video>
+
+            <div class="videolidd dis-none">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/images/liddSafariPic.PNG">
+            </div>
+
+             <h1 id="liddtitlel" class="liddtitle wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">BEST</h1>     
+            <div class="background-block wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+            </div>
+          <h3 class="tezisLidd wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">With us you will gain<br> in renown and success</h3>
+          <div class="liddContact wow fadeIn" data-wow-duration="1s" data-wow-delay="0.6s">
+          <a  class="scrollto liddAPortfolio" style="opacity: 0;">Portfolio</a>
+          <a href="#myblock5"  class="scrollto liddAContact" >Contact us</a>
+          
+          </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------- -->
+    <!---------------------------------- weCanBE ---------------------------------------->
+    <!-- ---------------------------------------------------------------------------- -->
+   <div id="myblock3" class="block2"> 
+    
+      <div id="WecanBE" class="container-lidd">
+
+            <!-- playsinline
+                <video class="video-background" autoplay loop muted playsinline>
+                  <video loop autoplay controls="true" width='100%' height='100%' src='//some_video.mp4' type='video/mp4'></video> -->
+            <video id="videoWeCanBe" class="videoWeCanBe" height="auto" loop="loop" autoplay="autoplay"  preload="auto" muted="muted"  style=" " >
+            <source src="<?php echo get_template_directory_uri() ?>/assets/video/Abstract.mp4">
+            </video>
+
+             <div class="videoWeCanBe dis-none">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/images/handsPic.PNG">
+            </div>
+                 
+            </div>
+          <h1 id="wecanbeTITLE" class="weCanBeTitle" >WE CAN BE</h1> 
+          <h3 class="tezisWeCanBe"></h3>
+          <div id="weCanBeContact" class="weCanBeContact ">
+          <!-- <a href="#" class="scrollto weCanBeAPortfolio">Portfolio</a> -->
+          
+          </div>
+    </div>
+      
+    <!-- ---------------------------------------------------------------------------- -->
+    <!---------------------------------- 3 БЛОК ---------------------------------------->
+    <!-- ---------------------------------------------------------------------------- -->
+    <div id="myblock4" class="block3" style="background-color: #000;">
+    
+                
+        <div class="purple_block">
+          <h2 class="Block3_Article wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">ALL YOU NEED IS</h2>
+        </div>  
+            
+            <div class="menu_Aneed wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+              <ul id="line_start" onmouseout="setLineStart()" >
+                <div id="focus" class="example"><li  id="line_start1" style="font-weight: 600!important; font-size: min(4vh,4vw);"  onmouseover="populateData(event)" class="lineItem1 hover hover-1">ONLINE BUSINESS CARD</li></div>
+                <div class="example"><li id="line_start2" style="font-weight: 600!important; font-size: min(4vh,4vw);" onmouseover = "populateData(event)" class="lineItem2 hover hover-1">LANDING PAGE</li></div>
+                <div class="example"><li id="line_start3" style="font-weight: 600!important; font-size: min(4vh,4vw);" onmouseover = "populateData(event)" class="lineItem3 hover hover-1">BUSINESS WEBSITE</li></div>
+                <div class="example"><li id="line_start4" style="font-weight: 600!important; font-size: min(4vh,4vw);"  onmouseover = "populateData(event)" class="lineItem4 hover hover-1">ONLINE STORE</li></div>
+              </ul>
+
+              <div class="lineforItems">
+                  
+              </div>
+
+              <div class="menu_Aneed_Answer">
+              <div id="ConectLine" class="menu_Aneed_Answer_line"></div>
+                <p id="content">HELLO THERE. <br>
+                I JUST WANTED TO TELL YOU <br>
+                THAT I AM HUNGRY AND BORED WITH <br>
+                THIS TEXT, CAUSE I DONT WANT KEEP <br>
+                DOING THIS SHIT <br>
+                <br>
+                YOU CAN TALK ABOUT THIS WITH YOUR <br>
+                MOTHER AND GIVE US YOUR MONEY</p>
+                </div>
+            </div>
+        <div class="ContactUS text-ligh exampleContactUS"> <!-- CONTACT -->
+        <a class="ContactUS scrollto hover hover-1" href="#myblock5">CONTACT US</a>
+        </div>
+    </div>
+    <!-- ---------------------------------------------------------------------------- -->
+    <!---------------------------------- 4 БЛОК ---------------------------------------->
+    <!-- #block4ContactUs ---------------------------------------------------------------------------- -->
+    <div id="myblock5" class="block4" style="background-color: #000;">
+                
+        <div class="Block4_background">
+          <div class="Block_NON"></div>
+          <h2 class="Block4_Article wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">CONTACT US</h2>
+        </div>
+
+         <div class="divwaitingfor"> <!-- CONTACT -->
+          <p class="waitingfor wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.3s" >we are waiting for you</p>
+        </div>
+
+        <div class="block4_main">
+          <ul>
+            <li class="block4_li"><a style="
+                color: white;
+            " href="mailto:liddweb@gmail.com">liddweb@gmail.com</a></li>
+                    <li class="block4_li"><a style="
+                color: white;
+            " href="tel:+19165897325">+1(916)589-7325</a></li>
+                    <li class="block4_li"><a style="
+                color: white;
+            " href="https://www.instagram.com/liddweb/">@liddweb</a></li>
+                    <li class="block4_li"><p style="
+                color: white;
+            " href="#">2651 Sunset Blvd, Rocklin, CA</p></li>
+          </ul>
+
+          <div class="formamy">
+            
+            <form autocomplete="off" id="contact-form" method="post" role="form">
+                  <div class="form-group">
+                      <label class="form-label" for="name">NAME</label>
+                      <input pattern="^[a-zA-Z]+$" type="text" class="form-control" id="myname" name="name" placeholder="NAME" tabindex="1" required>
+                      <div class="form-black-block"></div>
+                  </div>                            
+                  <div class="form-group">
+                      <label class="form-label" for="email">EMAIL</label>
+                      <input type="email" class="form-control" id="myemail" name="email" placeholder="EMAIL" tabindex="2" required>
+                       <div class="form-black-block"></div>
+                  </div> 
+                  <div class="form-group">
+                      <label class="form-label" for="phone">PHONE</label>
+                      <input pattern="[\d\(\)\-+()]{0,20}" type="text" class="form-control" id="mytelephone" name="tel" placeholder="PHONE" tabindex="3" required>
+                       <div class="form-black-block"></div>
+                  </div>                            
+                  <div class="form-group">
+                      <label class="form-label" for="subject">HOW CAN WE HELP YOU</label>
+                      <input type="text" class="form-control" id="mysubject" name="MYsubject" placeholder="HOW CAN WE HELP YOU" tabindex="4"> 
+                      <div class="form-black-block"></div>
+                  </div>
+                   <div class="text-center examplemy">
+                      <button type="submit" style="border: 0px!important;" class="btn btn-start-order hover hover-1">SUBMIT</button>
+                  </div>
+            </form>
+              </div> 
+          </div>
+    </div>
+ 
+  <!-- </div>  sections 
+</div container -->
+ 
+
+  <script src="<?php echo get_template_directory_uri() ?>/js/hammer.min.js"></script>
+  <script src="<?php echo get_template_directory_uri() ?>/js/highPhone.js"></script>
+
+   <script src="<?php echo get_template_directory_uri() ?>/js/whichBrouser.js"></script>
+
+  <script src="<?php echo get_template_directory_uri() ?>/js/particles.min.js"></script>
+  <!-- <script src="js/app.js"></script> -->
+  <script src="<?php echo get_template_directory_uri() ?>/js/lib/stats.js"></script>
+  <script src="<?php echo get_template_directory_uri() ?>/js/touchFone.js"></script>
+
+  <script src="<?php echo get_template_directory_uri() ?>/js/script.js"></script>
+ 
+</body>
+</html>

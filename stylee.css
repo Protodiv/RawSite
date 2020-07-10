@@ -1,0 +1,191 @@
+@charset "UTF-8";
+.example .hover {
+  font-size: min(3.5vh, 3.5vw);
+  margin: 0 auto;
+  padding: 0;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  margin: 40px 0px; }
+  .example .hover:before, .example .hover:after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    width: 0px;
+    height: 3px;
+    margin: 15px 50px 0;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.75s;
+    opacity: 0;
+    background-color: var(--basisPINKcolor); }
+  .example .hover.hover-1:before, .example .hover.hover-1:after {
+    left: 0; }
+.example:hover .hover {
+  list-style-image: var(--basisLi_image);
+  /*.menu_Aneed_Answer_line{
+  	bottom: var(--line-height);
+  }*/ }
+  .example:hover .hover:before, .example:hover .hover:after {
+    margin-top: 10px;
+    width: var(--line-width);
+    /*length for line*/
+    opacity: 1; }
+
+.examplemy {
+  font-size: min(4vw, 4vh); }
+  .examplemy .hover {
+    font-size: min(3.5vh, 3.5vw);
+    margin: 0 auto;
+    padding: 0;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    margin: 0px 0px; }
+    .examplemy .hover:before, .examplemy .hover:after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      width: 0px;
+      height: 3px;
+      margin: 15px 0px 0;
+      transition: all 0.2s ease-in-out;
+      transition-duration: 0.75s;
+      opacity: 0;
+      background-color: var(--basisPINKcolor); }
+    .examplemy .hover.hover-1:before, .examplemy .hover.hover-1:after {
+      left: 0; }
+  .examplemy:hover .hover {
+    list-style-image: var(--basisLi_image);
+    /*.menu_Aneed_Answer_line{
+    	bottom: var(--line-height);
+    }*/ }
+    .examplemy:hover .hover:before, .examplemy:hover .hover:after {
+      margin-top: 10px;
+      width: 70vw;
+      /*length for line*/
+      opacity: 1; }
+
+.exampleContactUS .hover {
+  margin: 0 auto;
+  padding: 0;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  margin: 20px 0px; }
+  .exampleContactUS .hover:before, .exampleContactUS .hover:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 0px;
+    height: 3px;
+    margin: 15px 0px 0;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.75s;
+    opacity: 0;
+    background-color: var(--basisPINKcolor); }
+  .exampleContactUS .hover.hover-1:before, .exampleContactUS .hover.hover-1:after {
+    left: 0; }
+.exampleContactUS:hover .hover {
+  list-style-image: var(--basisLi_image);
+  /*.menu_Aneed_Answer_line{
+    bottom: var(--line-height);
+  }*/ }
+  .exampleContactUS:hover .hover:before, .exampleContactUS:hover .hover:after {
+    margin-top: 10px;
+    width: 100%;
+    /*length for line*/
+    opacity: 1; }
+
+.exampleContact .hover {
+  margin: 0 auto;
+  padding: 0;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  margin: 20px 0px; }
+  .exampleContact .hover:before, .exampleContact .hover:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 0px;
+    height: 3px;
+    margin: 15px 0px 0;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.75s;
+    opacity: 0;
+    background-color: var(--basisFigure-color); }
+  .exampleContact .hover.hover-1:before, .exampleContact .hover.hover-1:after {
+    left: 0; }
+.exampleContact:hover .hover {
+  list-style-image: var(--basisLi_image);
+  /*.menu_Aneed_Answer_line{
+    bottom: var(--line-height);
+  }*/ }
+  .exampleContact:hover .hover:before, .exampleContact:hover .hover:after {
+    margin-top: 10px;
+    width: 100%;
+    /*length for line*/
+    opacity: 1; }
+
+/*------------------------------------------------------------------------*/
+/* ------------------------- cursor -------------------------------------*/
+/*------------------------------------------------------------------------*/
+.cursor {
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursorAnim .5s infinite alternate;
+  pointer-events: none;
+  z-index: 100; }
+
+.cursor::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border: 8px solid #4eb6c3;
+  border-radius: 50%;
+  opacity: .5;
+  top: -1px;
+  left: -1px;
+  animation: cursorAnim2 .5s infinite alternate; }
+
+@keyframes cursorAnim {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(0.7); } }
+@keyframes cursorAnim2 {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(0.4); } }
+@keyframes cursorAnim3 {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(3); }
+  100% {
+    transform: scale(1);
+    opacity: 0; } }
+.expand {
+  animation: cursorAnim3 .5s forwards;
+  border: 1px solid red; }
+
+a:link {
+  text-decoration: none;
+  /* Убирает подчеркивание для ссылок */
+  /*color: white;*/ }
+
+a:visited {
+  text-decoration: none; }
+
+a:active {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none;
+  color: white;
+  /* Делает ссылку подчеркнутой при наведении на нее курсора */ }
+
+/*# sourceMappingURL=stylee.css.map */
